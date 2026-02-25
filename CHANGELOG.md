@@ -29,3 +29,8 @@
 
 ## 0.0.6
 - Refined Mason global execution logic and fixed invalid flag error in make command
+
+## 0.0.7
+* Fixed dependency constraints for pub points.
+* Added usage example.
+* Improved documentation.
