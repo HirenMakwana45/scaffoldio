@@ -1,6 +1,6 @@
 name: scaffoldio
 description: A premium project scaffolding tool for Flutter by Hiren Makwana. Build high-quality Ecommerce and Service apps in seconds.
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/HirenMakwana45/scaffoldio
 repository: https://github.com/HirenMakwana45/scaffoldio
 
@@ -9,7 +9,7 @@ environment:
 
 # These allow your CLI to parse commands and run Mason
 dependencies:
-  args: ^2.4.2
+  args: ^2.7.0
 
 dev_dependencies:
   lints: ^6.1.0
