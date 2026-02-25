@@ -34,3 +34,9 @@
 * Fixed dependency constraints for pub points.
 * Added usage example.
 * Improved documentation.
+
+## 0.0.8
+* Fixed args version to latest
+
+## 0.0.9
+* Refined the structure

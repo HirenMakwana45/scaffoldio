@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:args/args.dart';
 
-const String version = '0.0.8';
+const String version = '0.0.9';
 
 void main(List<String> arguments) async {
   final ArgParser argParser = ArgParser()
