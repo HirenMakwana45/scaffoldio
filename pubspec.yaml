@@ -1,0 +1,21 @@
+name: scaffoldio
+description: A premium project scaffolding tool for Flutter by Hiren Makwana. Build high-quality Ecommerce and Service apps in seconds.
+version: 0.0.7
+homepage: https://github.com/HirenMakwana45/scaffoldio_ecommerce
+repository: https://github.com/HirenMakwana45/scaffoldio_ecommerce
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+# These allow your CLI to parse commands and run Mason
+dependencies:
+  args: ^2.4.2
+
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.24.0
+
+# This is the "Magic" line. When a user runs 'pub global activate', 
+# this makes the 'scaffoldio' command work in their terminal.
+executables:
+  scaffoldio: scaffoldio
