@@ -1,13 +1,13 @@
 
 ---
 
-# ScaffoldIo 🚀
+# ScaffoldIo
 
 **ScaffoldIo** is a premium Flutter scaffolding tool by **Hiren Makwana**. Stop starting from scratch and build production-ready apps in seconds using senior-level architecture and pre-built high-quality UIs.
 
 ---
 
-## ✨ Features
+## Features
 
 * **Expert Architecture:** Projects are generated with professional folder structures (`utils`, `store`, `screens`, `services`, `extensions`).
 * **State Management:** Ready-to-use **MobX** configuration for efficient state handling.
@@ -16,7 +16,7 @@
 
 ---
 
-## 📦 Installation
+##  Installation
 
 To use ScaffoldIo from anywhere on your system, activate it globally via pub.dev:
 
@@ -27,7 +27,7 @@ dart pub global activate scaffoldio
 
 ---
 
-## 🛠 Usage
+## Usage
 
 To generate a new project or add a template to an existing one, navigate to your desired folder and run:
 
@@ -39,16 +39,16 @@ scaffoldio create <template_name>
 ### Current Templates:
 
 * **`ecommerce`**: A premium Fashion/Store UI (based on the Kapda project) featuring 15+ high-quality screens including Splash, Home, Product Details, and Profile.
+* **`mist_ui_kit`**: A professional Service App template for doorstep vehicle washing services (Hoora clone). Includes booking flows and service selection UIs.
 
-### ⏳ Coming Soon:
+### Coming Soon:
 
-* **`service`**: High-quality service-based app template (Hoora Clone).
 * **`medical`**: Comprehensive medical and health management template.
 * **`delivery`**: End-to-end food and courier delivery boilerplate.
 
 ---
 
-## 📂 Generated Structure
+## Generated Structure
 
 When you generate a project, ScaffoldIo builds this standard senior-level structure for you:
 
@@ -66,7 +66,7 @@ lib/
 
 ---
 
-## 🤝 Support & Contribution
+##  Support & Contribution
 
 Feel free to open an issue or pull request on [GitHub](https://github.com/HirenMakwana45/scaffoldio_ecommerce).
 

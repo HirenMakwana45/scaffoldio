@@ -40,3 +40,9 @@
 
 ## 0.0.9
 * Refined the structure
+
+## 0.1.0
+* Added `mist_ui_kit` template (Vehicle Wash/Hoora clone)
+* Renamed `service` template to `mist_ui_kit`
+* Refactored `create` command for better multi-template support
+* Updated documentation for available templates

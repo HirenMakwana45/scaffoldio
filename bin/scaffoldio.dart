@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:args/args.dart';
 
-const String version = '0.0.9';
+const String version = '0.1.0'; // Updated version for the new template
 
 void main(List<String> arguments) async {
   final ArgParser argParser = ArgParser()
@@ -27,7 +27,7 @@ void main(List<String> arguments) async {
       final commandResults = results.command!;
       if (commandResults.rest.isEmpty) {
         print('❌ Please specify a template. Example: scaffoldio create ecommerce');
-        print('Available templates: ecommerce, service');
+        print('Available templates: ecommerce, mist_ui_kit'); // Updated message
         return;
       }
 
@@ -42,24 +42,27 @@ void main(List<String> arguments) async {
 }
 
 Future<void> _handleCreate(String template) async {
+  // Updated with your new GitHub URL
   final templates = {
     'ecommerce': 'https://github.com/HirenMakwana45/scaffoldio_ecommerce',
-    'service': 'https://github.com/HirenMakwana45/scaffoldio_service',
+    'mist_ui_kit': 'https://github.com/HirenMakwana45/mist_ui_kit',
   };
 
+  // Updated with the actual brick names (ensure these match your brick.yaml)
   final brickNames = {
     'ecommerce': 'scaffoldio_ecommerce',
-    'service': 'scaffoldio_service',
+    'mist_ui_kit': 'mist_ui_kit',
   };
 
   if (!templates.containsKey(template)) {
     print('❌ Template "$template" not found.');
+    print('Available: ecommerce, mist_ui_kit');
     return;
   }
 
-  print('🚀 ScaffoldIo is checking for updates...');
+  print('🚀 ScaffoldIo is checking for updates for $template...');
 
-  // 1. Add/Update the brick GLOBALLY
+  // 1. Add/Update the brick GLOBALLY using the Git URL
   final addProcess = await Process.start(
     'mason',
     ['add', '-g', brickNames[template]!, '--git-url', templates[template]!],
@@ -70,8 +73,7 @@ Future<void> _handleCreate(String template) async {
 
   print('📦 Generating $template files...');
 
-  // 2. Run mason make (WITHOUT -g)
-  // Mason is smart enough to find the global brick on its own!
+  // 2. Run mason make
   final makeProcess = await Process.start(
     'mason',
     [
@@ -97,7 +99,7 @@ void _printUsage(ArgParser parser) {
   print('ScaffoldIo CLI - Professional Flutter Scaffolding');
   print('Usage: scaffoldio <command> [arguments]\n');
   print('Commands:');
-  print('  create <template>    Create a new project (e.g., ecommerce, service)');
+  print('  create <template>    Create a new project (e.g., ecommerce, mist_ui_kit)');
   print('\nFlags:');
   print(parser.usage);
 }
